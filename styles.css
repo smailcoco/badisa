@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#attractionsList {
+    margin-top: 20px;
+}
+
+.attraction-item {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.attraction-item button {
+    margin-top: 10px;
+}
+
+/* تنسيق معلومات المعلم السياحي ليتم عرضها في سطر واحد */
+.attraction-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* تنسيق النموذج بحيث تظهر جميع حقول الإدخال في سطر واحد */
+#addAttractionForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* لإضافة مسافة بين الحقول */
+    margin-bottom: 10px;
+}
+#addAttractionForm input[type="text"] {
+    flex: 1;
+    min-width: 200px; /* التحكم بعرض الحقل */
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#addAttractionForm button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0; /* لمنع الزر من التمدد */
+}
+
+#addAttractionForm button:hover {
+    background-color: #45a049;
+}
+/* التأكد من أن الحقول لن تلتف للنزول لأسفل */
+.attraction-details p {
+    margin: 0 10px;
+    flex: 1;
+    text-align: left;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+/* تنسيق حقل البحث وزر البحث في سطر واحد */
+#searchSection {
+    display: flex;
+    justify-content: center; /* توسيط المحتوى */
+    align-items: center; /* محاذاة عمودية */
+    margin-bottom: 20px; /* إضافة مسافة أسفل القسم */
+}
+
+#searchInput {
+    flex: 1; /* يجعل حقل البحث يأخذ العرض المتاح */
+    width: 100%; /* استخدم العرض المتاح */
+    min-width: 100px; /* الحد الأدنى لعرض حقل البحث */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* مسافة بين حقل البحث وزر البحث */
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+#map {
+    width: 100%; /* استخدام عرض كامل */
+    height: 400px; /* تحديد ارتفاع الخريطة */
+    border: 2px solid #4CAF50; /* إطار باللون الأخضر */
+    border-radius: 10px; /* زوايا مدورة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    margin-top: 20px; /* مسافة من الأعلى */
+}
+
